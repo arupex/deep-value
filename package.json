@@ -1,0 +1,29 @@
+{
+  "name": "deep-value",
+  "version": "1.0.0",
+  "description": "get a value from an object within other objects safely",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arupex/deep-value.git"
+  },
+  "keywords": [
+    "deep",
+    "value",
+    "get",
+    "retrieve"
+  ],
+  "author": "dirwin517",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/arupex/deep-value/issues"
+  },
+  "homepage": "https://github.com/arupex/deep-value#readme",
+  "devDependencies": {
+    "assert-diff": "^1.0.1",
+    "mocha": "^2.5.3"
+  }
+}
