@@ -51,4 +51,13 @@ describe('test deep-value', function(){
 
     });
 
+
+
+    it('access array by boolean', function(){
+        assert(deep({ my : { object : [{i : 1},{ i: true,  v : 1 }] } }, 'my.object.@i==true.v'), 1);
+        assert(deep({ my : [ {i : 1},{ i: true, object : { v : 1 } }] }, 'my.@i==true.object'), { v : 1 });
+        assert(deep([{ i : 1 }, { i: false, my : { object : { v : 1 } } }], '@i==false.my'), { object : { v : 1 } } );
+    });
+
+
 });

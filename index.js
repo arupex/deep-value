@@ -27,7 +27,14 @@ function arupex_deep_value(entity, accessor) {
             Object.keys(props).forEach(function (prop) {
                 var v = props[prop];
 
-                isTheOne = isTheOne && arupex_deep_value(oneOf, prop) == v
+                var extractedValue = arupex_deep_value(oneOf, prop);
+                var typeOfExtracted = typeof extractedValue;
+                if(typeOfExtracted === 'boolean' || typeOfExtracted === 'number'){
+                    isTheOne = isTheOne && extractedValue.toString() == v;
+                }
+                else{
+                    isTheOne = isTheOne && extractedValue == v;
+                }
             });
             if (!isTheOne) {
                 searchIndex++;
