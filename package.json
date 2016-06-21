@@ -1,6 +1,6 @@
 {
   "name": "deep-value",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get a value from an object within other objects safely",
   "main": "index.js",
   "scripts": {
