@@ -1,0 +1,23 @@
+{
+  "name": "deep-value",
+  "description": "get a value from an object within other objects safely",
+  "main": "index.js",
+  "authors": [
+    "dirwin517"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "deep",
+    "value",
+    "get",
+    "retrieve"
+  ],
+  "homepage": "https://github.com/arupex/deep-value",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
