@@ -21,7 +21,7 @@ function arupex_deep_value(entity, accessor) {
         });
 
         var searchIndex = 0;
-        entity.forEach(function (oneOf) {
+        entity.some(function (oneOf) {
             var isTheOne = true;
 
             Object.keys(props).forEach(function (prop) {
@@ -38,6 +38,10 @@ function arupex_deep_value(entity, accessor) {
             });
             if (!isTheOne) {
                 searchIndex++;
+                return false;
+            }
+            else {
+                return true;
             }
         });
         if (searchIndex !== -1) {
